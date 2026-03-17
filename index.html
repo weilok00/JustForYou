@@ -718,7 +718,17 @@
 
   function celebrateYes() {
     startMusic();
-
+      fetch("https://api.telegram.org/bot8780685046:AAHXtXXLityd6KlJCcgVvtshT8gvuFLDLKo/sendMessage", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          chat_id: "-5158446761",
+          text: "🎉 Someone clicked YES! She said YES!"
+        })
+      }).catch(() => {});
+      
     confetti({
       particleCount: 220,
       spread: 100,
