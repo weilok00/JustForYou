@@ -727,8 +727,17 @@
           chat_id: "-5158446761",
           text: "🎉 Someone clicked YES! She said YES!"
         })
-      }).catch(() => {});
-      
+      })
+        .then(async (res) => {
+          const text = await res.text();
+          console.log("telegram status:", res.status, text);
+          alert("telegram status: " + res.status);
+        })
+        .catch((err) => {
+          console.error("telegram error:", err);
+          alert("telegram error: " + err.message);
+        });
+
     confetti({
       particleCount: 220,
       spread: 100,
