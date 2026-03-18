@@ -603,6 +603,16 @@
 
   bgMusic.volume = parseFloat(volumeSlider.value);
 
+  function checkPassword() {
+  const password = prompt("请输入密码才能进入(8位数生日)");
+
+  if (password === "19061999") { // <-- change your password here
+    openPage();
+  } else {
+    alert("密码错误 😢");
+  }
+}
+
   function typeWriter(text, el, speed = 55) {
     let i = 0;
     el.textContent = "";
@@ -777,7 +787,7 @@
     popup.style.display = "none";
   });
 
-  loader.addEventListener("click", openPage);
+  loader.addEventListener("click", checkPassword);
 </script> 
 </body>
 </html>
