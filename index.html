@@ -12,13 +12,13 @@
     }
 
     :root {
-      --pink: #ff4f87;
-      --light-pink: #ffe4ec;
-      --bg1: #fff0f5;
-      --bg2: #fff8fb;
-      --text: #333;
-      --white: rgba(255, 255, 255, 0.78);
-      --shadow: 0 10px 35px rgba(255, 79, 135, 0.16);
+      --pink: #2563eb;
+      --light-pink: #dbeafe;
+      --bg1: #f8fbff;
+      --bg2: #eef5ff;
+      --text: #1f2937;
+      --white: rgba(255, 255, 255, 0.82);
+      --shadow: 0 10px 35px rgba(37, 99, 235, 0.12);
     }
 
     body {
@@ -27,8 +27,8 @@
       font-family: "Arial", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, #ffdbe8 0%, transparent 35%),
-        radial-gradient(circle at bottom right, #ffeef5 0%, transparent 40%),
+        radial-gradient(circle at top left, #dbeafe 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #eff6ff 0%, transparent 40%),
         linear-gradient(135deg, var(--bg1), var(--bg2));
       overflow-x: hidden;
     }
@@ -52,7 +52,7 @@
     .blob1 {
       width: 220px;
       height: 220px;
-      background: #ffc3d6;
+      background: #bfdbfe;
       top: 8%;
       left: -40px;
     }
@@ -60,7 +60,7 @@
     .blob2 {
       width: 260px;
       height: 260px;
-      background: #ffdff0;
+      background: #dbeafe;
       bottom: 8%;
       right: -50px;
       animation-delay: 1.5s;
@@ -69,7 +69,7 @@
     .blob3 {
       width: 180px;
       height: 180px;
-      background: #ffd2e4;
+      background: #93c5fd;
       top: 45%;
       left: 55%;
       animation-delay: 3s;
@@ -91,7 +91,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #ffe4ec, #fff8fb);
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
       flex-direction: column;
       transition: opacity 0.6s ease, visibility 0.6s ease;
     }
@@ -129,9 +129,9 @@
 
     .icon-btn {
       border: none;
-      background: rgba(255,255,255,0.72);
+      background: rgba(255,255,255,0.78);
       backdrop-filter: blur(12px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
       border-radius: 999px;
       width: 46px;
       height: 46px;
@@ -157,7 +157,7 @@
     .hero-card {
       background: var(--white);
       backdrop-filter: blur(16px);
-      border: 1px solid rgba(255,255,255,0.6);
+      border: 1px solid rgba(255,255,255,0.9);
       border-radius: 26px;
       box-shadow: var(--shadow);
       padding: 22px 18px 26px;
@@ -181,7 +181,7 @@
       font-size: 13px;
       color: var(--pink);
       background: #fff;
-      border: 1px solid #ffd5e3;
+      border: 1px solid #dbeafe;
       padding: 6px 12px;
       border-radius: 999px;
       margin-bottom: 14px;
@@ -209,8 +209,8 @@
       left: 12px;
       right: 12px;
       bottom: 12px;
-      background: rgba(255,255,255,0.78);
-      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.72);
+      backdrop-filter: blur(16px);
       border-radius: 14px;
       padding: 8px 12px;
       font-size: 13px;
@@ -235,7 +235,7 @@
 
     .section {
       margin-top: 18px;
-      background: rgba(255,255,255,0.74);
+      background: rgba(255,255,255,0.8);
       border-radius: 20px;
       padding: 16px;
       text-align: left;
@@ -259,7 +259,7 @@
       padding: 12px 14px;
       font-size: 14px;
       line-height: 1.6;
-      box-shadow: 0 4px 12px rgba(255, 79, 135, 0.08);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.08);
     }
 
     .timeline {
@@ -274,7 +274,7 @@
       background: #fff;
       border-radius: 14px;
       padding: 12px;
-      box-shadow: 0 4px 12px rgba(255, 79, 135, 0.07);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.07);
             font-size: 14px;
     }
 
@@ -322,16 +322,16 @@
     }
 
     #yesBtn {
-      background: linear-gradient(135deg, #ff5e94, #ff3577);
+      background: linear-gradient(135deg, #60a5fa, #2563eb);
       color: white;
       transform-origin: center center;
       min-width: 132px;
     }
 
     #noBtn {
-      background: white;
+      background: rgba(255,255,255,0.95);
       color: var(--pink);
-      border: 2px solid var(--pink);
+      border: 1.5px solid #bfdbfe;
       width: 156px;
       min-height: 58px;
       display: flex;
@@ -368,7 +368,7 @@
       text-align: center;
       width: 92%;
       max-width: 340px;
-      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.18);
       animation: pop 0.35s ease;
     }
 
@@ -452,7 +452,7 @@
     }
     #volumeSlider {
       width: 100px;
-      accent-color: #ff4f87;
+      accent-color: #2563eb;
       cursor: pointer;
     }
     #loader {
@@ -463,15 +463,17 @@
 </head>
 <body>
     <div class="loader" id="loader">
-        <div class="loader-text">我感觉以后可能用不到了 如果你哪天看到了 这是给你的</div>
-        <div class="loader-text">我们一生会遇见很多人 </div>
-        <div class="loader-text">我没有想过会以这种方式认识你</div>
-        <div class="loader-text">是缘分把我们带到一起</div>
+        <div class="loader-text">这是准备给你的 我感觉以后可能用不到了 </div>
+        <div class="loader-text"></div>
+        <div class="loader-text">其实我没有想过会以这种方式认识你</div>
+        <div class="loader-text">我们一生中会遇见很多人 </div>
+        <div class="loader-text">遇见你是一种缘分吧 </div>
+        <div class="loader-text">是缘分把我们带到一起 </div>
         <div class="loader-text">不管结局是什么 我都很高兴认识你</div>
         <div class="loader-text"></div>
         <div class="loader-text"></div>
         <div class="loader-text">！警告！你准备好了才打开</div>
-      <div class="loader-text">点击打开属于你的浪漫页面 💖</div>
+      <div class="loader-text">点击打开属于你的浪漫页面 🩵</div>
     </div> 
 
   <div class="bg-blur">
@@ -486,13 +488,13 @@
   </div>
 
   <audio id="bgMusic" loop>
-    <source src="music/就是爱你.mp4" type="audio/mpeg" />
+    <source src="music/爱河.mp4" type="audio/mpeg" />
   </audio>
 
   <div class="page">
     <div class="container">
       <div class="hero-card">
-        <div class="badge">💌 一份认真准备的小小告白</div>
+        <div class="badge">💙 为你准备的一份特别告白</div>
 
         <div class="photo-frame">
           <img id="mainPhoto" class="photo" src="images/1.jpeg" alt="你的照片" />
@@ -504,7 +506,7 @@
         <p class="typing-text" id="typingText"></p>
 
         <div class="section">
-          <h2>为什么是你 💗</h2>
+          <h2>为什么是你 🩵</h2>
           <div class="reasons">
             <div class="reason-item">第一眼看到你时，你的娇小玲珑吸引了我。</div>
             <div class="reason-item">然后想见你，想分享生活，想跟你多一点相处，进入你的世界。</div>
@@ -545,13 +547,13 @@
               </div>
             </div>
                 <div style="margin-top:16px; text-align:center;">
-                <h1 style="margin-top:12px;">你愿意和我在一起吗？ 💖</h1>
+                <h1 style="margin-top:12px;">你愿意和我在一起吗？ 🩵</h1>
               </div>
           </div>
         </div>
 
         <div class="buttons" id="buttonArea">
-          <button id="yesBtn">我愿意 💖</button>
+          <button id="yesBtn">我愿意 🩵</button>
           <button id="noBtn">我不要</button>
         </div>
       </div>
@@ -561,7 +563,7 @@
   <div id="popup" class="popup">
     <div class="popup-content">
       <img src="images/2.jpg" class="popup-img" alt="庆祝照片" />
-      <h2>哇哇太好了 💖</h2>
+      <h2>哇哇太好了 🩵</h2>
       <p>从现在开始，请多多指教啦，我会好好珍惜你。</p>
       <div class="final-note">点击任意地方关闭这个页面上的小惊喜 ✨</div>
     </div>
@@ -589,7 +591,7 @@
   const beggingTexts = [
     "再想想好不好～",
     "你确定真的不要吗？",
-    "拜托拜托啦 💞",
+    "拜托拜托啦 🙏",
     "最后一次机会了哦",
     "你忍心拒绝我吗 😭",
     "按我愿意就好啦",
@@ -658,16 +660,24 @@
   function createHeart() {
     const heart = document.createElement("div");
     heart.className = "heart";
-    heart.textContent = Math.random() > 0.5 ? "💖" : "💕";
+    heart.textContent = Math.random() > 0.5 ? "💙" : "🩵";
     heart.style.left = Math.random() * window.innerWidth + "px";
-    heart.style.animationDuration = (Math.random() * 2 + 3) + "s";
-    heart.style.fontSize = (Math.random() * 14 + 18) + "px";
+    heart.style.animationDuration = (Math.random() * 1.8 + 2.2) + "s";
+    heart.style.fontSize = (Math.random() * 16 + 20) + "px";
 
     document.body.appendChild(heart);
 
     setTimeout(() => {
       heart.remove();
-    }, 5000);
+    }, 4500);
+  }
+
+  function blueHeartRain(count = 60) {
+    for (let i = 0; i < count; i++) {
+      setTimeout(() => {
+        createHeart();
+      }, i * 80);
+    }
   }
 
   function startHeartsBackground() {
@@ -759,20 +769,20 @@
     confetti({
       particleCount: 220,
       spread: 100,
-      origin: { y: 0.6 }
+      origin: { y: 0.6 },
+      colors: ["#2563eb", "#60a5fa", "#93c5fd", "#dbeafe"]
     });
 
     setTimeout(() => {
       confetti({
         particleCount: 150,
         spread: 130,
-        origin: { y: 0.5 }
+        origin: { y: 0.5 },
+        colors: ["#2563eb", "#60a5fa", "#93c5fd", "#dbeafe"]
       });
     }, 300);
 
-    for (let i = 0; i < 28; i++) {
-      setTimeout(createHeart, i * 120);
-    }
+    blueHeartRain(70);
 
     popup.style.display = "flex";
   }
